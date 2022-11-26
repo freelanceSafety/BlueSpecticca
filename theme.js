@@ -6,3 +6,6 @@ if(window.location.hostname.toLowerCase().includes('luxewalk')){
 if(window.location.hostname.toLowerCase().includes('teenpreneur')){
  console.log("Hi teenpreneur") 
 }
+if(window.location.hostname.toLowerCase().includes('onset')){
+ console.log("Hi Onset Homes") 
+}
