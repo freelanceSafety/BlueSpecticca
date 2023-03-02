@@ -9,3 +9,7 @@ if(window.location.hostname.toLowerCase().includes('teenpreneur')){
 if(window.location.hostname.toLowerCase().includes('onset')){
  console.log("Hi Onset Homes") 
 }
+
+if(window.location.hostname.toLowerCase().includes('bombaytoycompany')){
+ console.log("Hi BTC") 
+}
