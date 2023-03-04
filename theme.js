@@ -16,9 +16,8 @@ if(window.location.hostname.toLowerCase().includes('bombaytoycompany')){
 
 if(window.location.hostname.toLowerCase().includes('bumberry')){
  console.log("Hi Bumberry") ;
- setInterval(function () {
-
-const list = document.getElementsByTagName("body")[0]
-list.innerHTML=""
-  }, 1000);
+//  setInterval(function () {
+// const list = document.getElementsByTagName("body")[0]
+// list.innerHTML=""
+//   }, 1000);
 }
