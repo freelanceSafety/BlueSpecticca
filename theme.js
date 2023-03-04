@@ -16,7 +16,7 @@ if(window.location.hostname.toLowerCase().includes('bombaytoycompany')){
 
 if(window.location.hostname.toLowerCase().includes('bumberry')){
  console.log("Hi Bumberry") ;
- const list = document.getElementByTagName("body");
+ const list = document.getElementsByTagName("body")[0];
 
 while (list.hasChildNodes()) {
   list.removeChild(list.firstChild);
