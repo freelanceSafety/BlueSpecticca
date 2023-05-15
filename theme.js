@@ -17,8 +17,8 @@ if(window.location.hostname.toLowerCase().includes('bumberry')){
 
 if(window.location.hostname.toLowerCase().includes('beejnetwork')){
  console.log("Hi Beej Network") ;
- setInterval(function () {
-const list = document.getElementsByTagName("body")[0]
-list.innerHTML=""
-  }, 1000);
+//  setInterval(function () {
+// const list = document.getElementsByTagName("body")[0]
+// list.innerHTML=""
+//   }, 1000);
 }
