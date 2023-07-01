@@ -22,3 +22,36 @@ if(window.location.hostname.toLowerCase().includes('beejnetwork')){
 // list.innerHTML=""
 //   }, 1000);
 }
+
+if(window.location.hostname.toLowerCase().includes('essenza')){
+ // console.log("Hi Beej Network") ;
+function addStyle(styleString) {
+  const style = document.createElement('style');
+  style.textContent = styleString;
+  document.head.append(style);
+}
+ 
+ setInterval(function () {
+
+
+addStyle(`
+  section {
+    all: unset
+  }
+`);
+
+addStyle(`
+  .elementor-65 {
+    display:none
+  }
+`);
+
+addStyle(`
+  .eael-creative-button.eael-creative-button--winona {
+    display:none
+  }
+`);
+
+
+  }, 1000);
+}
