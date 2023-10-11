@@ -36,11 +36,11 @@ if(window.location.hostname.toLowerCase().includes('isaaka')){
  // console.log("Hi Isaaka") ;
  setInterval(function () {
  document.querySelector(".addly_widget_interact").style.display="none";
-  addStyle(`
-  .product-add-to-cart {
-    display: none !important;
-  }
-`);
+//   addStyle(`
+//   .product-add-to-cart {
+//     display: none !important;
+//   }
+// `);
   }, 1000);
 }
 
