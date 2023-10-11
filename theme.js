@@ -25,15 +25,16 @@ if(window.location.hostname.toLowerCase().includes('beejnetwork')){
 
 if(window.location.hostname.toLowerCase().includes('isaaka')){
 
- addStyle(`
-  .product-add-to-cart {
-    display: none !important;
-  }
-`);
+ 
  
  // console.log("Hi Isaaka") ;
  setInterval(function () {
  document.querySelector(".addly_widget_interact").style.display="none";
+  addStyle(`
+  .product-add-to-cart {
+    display: none !important;
+  }
+`);
   }, 1000);
 }
 
