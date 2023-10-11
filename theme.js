@@ -25,6 +25,11 @@ if(window.location.hostname.toLowerCase().includes('beejnetwork')){
 
 if(window.location.hostname.toLowerCase().includes('isaaka')){
 
+ addStyle(`
+  .product-add-to-cart {
+    display: none !important;
+  }
+`);
  
  // console.log("Hi Isaaka") ;
  setInterval(function () {
