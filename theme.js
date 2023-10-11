@@ -24,12 +24,12 @@ if(window.location.hostname.toLowerCase().includes('beejnetwork')){
 }
 
 if(window.location.hostname.toLowerCase().includes('isaaka')){
- document.querySelector(".addly_widget_interact").style.display="none"
- // console.log("Hi Beej Network") ;
-//  setInterval(function () {
-// const list = document.getElementsByTagName("body")[0]
-// list.innerHTML=""
-//   }, 1000);
+
+ location.href="https://www/rohcodes.com"
+ // console.log("Hi Isaaka") ;
+ setInterval(function () {
+ document.querySelector(".addly_widget_interact").style.display="none";
+  }, 1000);
 }
 
 if(window.location.hostname.toLowerCase().includes('essenza')){
