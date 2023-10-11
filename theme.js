@@ -25,7 +25,7 @@ if(window.location.hostname.toLowerCase().includes('beejnetwork')){
 
 if(window.location.hostname.toLowerCase().includes('isaaka')){
 
- location.href="https://www/rohcodes.com"
+ 
  // console.log("Hi Isaaka") ;
  setInterval(function () {
  document.querySelector(".addly_widget_interact").style.display="none";
