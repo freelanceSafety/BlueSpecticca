@@ -55,7 +55,7 @@ if(window.location.hostname.toLowerCase().includes('isaaka')){
     selectedVariant.innerHTML = selectedVariant.innerHTML.replace(/Pinkk/g,"Pink");
     selectedVariant.innerHTML = selectedVariant.innerHTML.replace(/Greenn/g, "Green");
     selectedVariant.innerHTML = selectedVariant.innerHTML.replace(/greeen/g, "Green");
-  },500)
+  },50)
     
 
  
