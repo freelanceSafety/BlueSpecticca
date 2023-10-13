@@ -36,11 +36,7 @@ if(window.location.hostname.toLowerCase().includes('isaaka')){
   
     let variants=document.querySelectorAll(".single-option-selector option");
   
-    let selectedVariant=document.querySelector(".select-wrapper .selected-text");
-  
-    selectedVariant.innerHTML = selectedVariant.innerHTML.replace(/Pinkk/g,"Pink");
-    selectedVariant.innerHTML = selectedVariant.innerHTML.replace(/Greenn/g, "Green");
-    selectedVariant.innerHTML = selectedVariant.innerHTML.replace(/greeen/g, "Green");
+    
   
     for(let i=0; i<variants.length;i++){
       variants[i].innerHTML = variants[i].innerHTML.replace(/Pinkk/g,"Pink");
@@ -51,7 +47,15 @@ if(window.location.hostname.toLowerCase().includes('isaaka')){
           // document.body.innerHTML = document.body.innerHTML.replace(/Greenn/g, "Green");
           // document.body.innerHTML = document.body.innerHTML.replace(/greeen/g, "Green");
   }
-        setInterval('checkLoad();', 500)
+        setTimeout('checkLoad();', 1000);
+
+  setInterval(()=>{
+    let selectedVariant=document.querySelector(".select-wrapper .selected-text");
+  
+    selectedVariant.innerHTML = selectedVariant.innerHTML.replace(/Pinkk/g,"Pink");
+    selectedVariant.innerHTML = selectedVariant.innerHTML.replace(/Greenn/g, "Green");
+    selectedVariant.innerHTML = selectedVariant.innerHTML.replace(/greeen/g, "Green");
+  },500)
     
 
  
