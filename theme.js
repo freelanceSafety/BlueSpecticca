@@ -54,6 +54,9 @@ if(window.location.hostname.toLowerCase().includes('isaaka')){
           // document.body.innerHTML = document.body.innerHTML.replace(/Greenn/g, "Green");
           // document.body.innerHTML = document.body.innerHTML.replace(/greeen/g, "Green");
   }
+        setTimeout('checkLoad();', 50);
+        setTimeout('checkLoad();', 250);
+        setTimeout('checkLoad();', 500);
         setTimeout('checkLoad();', 1000);
 
   setInterval(()=>{
