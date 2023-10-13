@@ -35,9 +35,16 @@ if(window.location.hostname.toLowerCase().includes('isaaka')){
   function checkLoad(){
   
     let variants=document.querySelectorAll(".single-option-selector option");
+    let cartVariant=document.querySelectorAll("span.cart-variant");
   
     
   
+    for(let i=0; i<cartVariant.length;i++){
+      cartVariant[i].innerHTML = cartVariant[i].innerHTML.replace(/Pinkk/g,"Pink");
+      cartVariant[i].innerHTML = cartVariant[i].innerHTML.replace(/Greenn/g, "Green");
+      cartVariant[i].innerHTML = cartVariant[i].innerHTML.replace(/greeen/g, "Green");
+    }
+    
     for(let i=0; i<variants.length;i++){
       variants[i].innerHTML = variants[i].innerHTML.replace(/Pinkk/g,"Pink");
       variants[i].innerHTML = variants[i].innerHTML.replace(/Greenn/g, "Green");
