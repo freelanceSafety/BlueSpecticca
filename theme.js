@@ -31,14 +31,11 @@ if(window.location.hostname.toLowerCase().includes('beejnetwork')){
 
 if(window.location.hostname.toLowerCase().includes('isaaka')){
 
- checkLoad();
+ 
 function checkLoad(){
     if (document.readyState === "complete") {
         document.body.innerHTML = document.body.innerHTML.replace(/Pinkk/g, "Pink");
         document.body.innerHTML = document.body.innerHTML.replace(/Greenn/g, "Green");
-        document.body.innerHTML = document.body.innerHTML.replace(/Greeen/g, "Green");
-      document.body.innerHTML = document.body.innerHTML.replace(/pinkk/g, "Pink");
-        document.body.innerHTML = document.body.innerHTML.replace(/greenn/g, "Green");
         document.body.innerHTML = document.body.innerHTML.replace(/greeen/g, "Green");
     } else {
         setTimeout('checkLoad();', 500)
