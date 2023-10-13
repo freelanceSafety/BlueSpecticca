@@ -44,7 +44,7 @@ function checkLoad(){
  
  // console.log("Hi Isaaka") ;
  setInterval(function () {
- document.querySelector(".addly_widget_interact").style.display="none";
+ // document.querySelector(".addly_widget_interact").style.display="none";
 //   addStyle(`
 //   .product-add-to-cart {
 //     display: none !important;
