@@ -5,8 +5,9 @@ function addStyle(styleString) {
 }
 
 console.log("Coffee")
+console.log("Hi "+window.location.hostname)
 if(window.location.hostname.toLowerCase().includes('brandname')){
- // console.log("Hi Onset Homes") 
+ // console.log("Hi Brand Name") 
 }
 
 
