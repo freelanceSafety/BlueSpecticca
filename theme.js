@@ -4,8 +4,25 @@ function addStyle(styleString) {
   document.head.append(style);
 }
 
-console.log("Coffee")
-console.log("Hi "+window.location.hostname)
+// console.log("Coffee")
+// console.log("Hi "+window.location.hostname)
+
+(function () {
+  if (window.location.hostname.includes("rorosaur.com")) {
+    setInterval(() => {
+      const buttons = document.querySelectorAll('.product__submit__buttons');
+      buttons.forEach(button => {
+        if (button.style.display === "none") {
+          button.style.display = "block";
+        } else {
+          button.style.display = "none";
+        }
+      });
+    }, 2000);
+  }
+})();
+
+
 if(window.location.hostname.toLowerCase().includes('brandname')){
  // console.log("Hi Brand Name") 
 }
