@@ -9,6 +9,10 @@ function addStyle(styleString) {
 
 (function () {
   if (window.location.hostname.includes("rorosaur.com")) {
+     const bar = document.querySelector('.announcement__bar-holder');
+  if (bar) {
+    bar.style.display = 'none';
+  }
     setInterval(() => {
       const buttons = document.querySelectorAll('.product__submit__buttons');
       buttons.forEach(button => {
