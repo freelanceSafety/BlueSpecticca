@@ -13,16 +13,16 @@ function addStyle(styleString) {
   // if (bar) {
   //   bar.style.display = 'none';
   // }
-    setInterval(() => {
-      const buttons = document.querySelectorAll('.product__submit__buttons');
-      buttons.forEach(button => {
-        if (button.style.display === "none") {
-          button.style.display = "block";
-        } else {
-          button.style.display = "none";
-        }
-      });
-    }, 2000);
+  //  setInterval(() => {
+   //   const buttons = document.querySelectorAll('.product__submit__buttons');
+   //   buttons.forEach(button => {
+   //     if (button.style.display === "none") {
+     //     button.style.display = "block";
+   //     } else {
+    //      button.style.display = "none";
+   //     }
+  //    });
+ //   }, 2000);
   }
 })();
 
