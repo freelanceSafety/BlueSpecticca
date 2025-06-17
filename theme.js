@@ -4,8 +4,8 @@ function addStyle(styleString) {
   document.head.append(style);
 }
 
-// console.log("Coffee")
-// console.log("Hi "+window.location.hostname)
+ console.log("Coffee")
+ console.log("Hi "+window.location.hostname)
 
 (function () {
   if (window.location.hostname.includes("rorosaur.com")) {
