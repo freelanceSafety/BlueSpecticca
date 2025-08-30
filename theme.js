@@ -7,5 +7,6 @@ function addStyle(styleString) {
  console.log("Coffee")
  console.log("Hi "+window.location.hostname)
 
-if(window.location.hostname.toLowerCase().includes('brandname')){
+if(window.location.hostname.toLowerCase().includes('outback.life')){
+  document.getElementById('SiteHeader').style.display="hidden"
 }
