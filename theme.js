@@ -8,5 +8,5 @@ function addStyle(styleString) {
  console.log("Hi "+window.location.hostname)
 
 if(window.location.hostname.toLowerCase().includes('outback.life')){
-  document.getElementById('SiteHeader').style.display="hidden"
+  // document.getElementById('SiteHeader').style.display="hidden"
 }
