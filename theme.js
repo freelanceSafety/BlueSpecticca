@@ -7,10 +7,10 @@ function addStyle(styleString) {
 // console.log("Coffee");
 // console.log("Hi " + window.location.hostname);
 
-if (window.location.hostname.toLowerCase().includes('onset')) {
-  if (window.location.href.includes('products')) {
-    setTimeout(() => {
-      window.location.reload();
-    }, 1500); 
-  }
-}
+// if (window.location.hostname.toLowerCase().includes('onset')) {
+//   if (window.location.href.includes('products')) {
+//     setTimeout(() => {
+//       window.location.reload();
+//     }, 1500); 
+//   }
+// }
