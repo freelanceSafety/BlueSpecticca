@@ -7,6 +7,9 @@ function addStyle(styleString) {
  console.log("Coffee")
  console.log("Hi "+window.location.hostname)
 
-if(window.location.hostname.toLowerCase().includes('outback.life')){
+if(window.location.hostname.toLowerCase().includes('onset')){
+  if(window.location.href.includes('products'){
+    window.location.reload();
+  }
   // document.getElementById('SiteHeader').style.display="hidden"
 }
