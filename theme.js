@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
   /* 3. Inject flicker animation for product title */
   const style = document.createElement("style");
   style.innerHTML = `
-    @keyframes productTitleFlicker {
+    @keyframes productTitle {
       0% { opacity: 1; }
       45% { opacity: 0.6; }
       50% { opacity: 0; }
@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     .product__title {
-      animation: productTitleFlicker 1.5s infinite;
+      animation: productTitle 1.5s infinite;
     }
   `;
   document.head.appendChild(style);
