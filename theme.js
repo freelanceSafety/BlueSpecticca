@@ -7,17 +7,8 @@ function addStyle(styleString) {
 // console.log("Coffee");
 // console.log("Hi " + window.location.hostname);
 
-// if (window.location.hostname.toLowerCase().includes('onset')) {
-//   if (window.location.href.includes('products')) {
-//     setTimeout(() => {
-//       window.location.reload();
-//     }, 1500); 
-//   }
-// }
-
-// Run after DOM is ready
+if (window.location.hostname.toLowerCase().includes('onset')) {
 document.addEventListener("DOMContentLoaded", () => {
-  /* 1. Set width for slideshow section */
   const slideshowSection = document.getElementById(
     "shopify-section-template--19891741327581__slideshow_zm9pm7"
   );
@@ -27,7 +18,6 @@ document.addEventListener("DOMContentLoaded", () => {
     slideshowSection.style.overflow = "hidden";
   }
 
-  /* 2. Set width for product media wrapper */
   const mediaWrappers = document.querySelectorAll(
     ".grid__item.product__media-wrapper"
   );
@@ -37,7 +27,14 @@ document.addEventListener("DOMContentLoaded", () => {
     el.style.overflow = "hidden";
   });
 
-  /* 3. Inject flicker animation for product title */
+   const headers = document.querySelectorAll(
+    ".header-wrapper.color-background-1.gradient.header-wrapper--border-bottom"
+  );
+
+  headers.forEach((header) => {
+    header.style.minHeight = "150px";
+  });
+  
   const style = document.createElement("style");
   style.innerHTML = `
     @keyframes productTitle {
@@ -55,3 +52,6 @@ document.addEventListener("DOMContentLoaded", () => {
   `;
   document.head.appendChild(style);
 });
+
+}
+
