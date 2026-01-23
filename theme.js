@@ -33,8 +33,8 @@ document.addEventListener("DOMContentLoaded", () => {
   );
 
   mediaWrappers.forEach((el) => {
-    el.style.width = "80vw";
-    el.style.margin = "0 auto";
+    el.style.maxWidth = "60vw";
+    el.style.overflow = "hidden";
   });
 
   /* 3. Inject flicker animation for product title */
@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     .product__title {
-      animation: productTitleFlicker 3s infinite;
+      animation: productTitleFlicker 1.5s infinite;
     }
   `;
   document.head.appendChild(style);
