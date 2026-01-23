@@ -42,15 +42,15 @@ document.addEventListener("DOMContentLoaded", () => {
   style.innerHTML = `
     @keyframes productTitleFlicker {
       0% { opacity: 1; }
-      45% { opacity: 0.9; }
-      50% { opacity: 0.6; }
-      55% { opacity: 0.95; }
-      70% { opacity: 0.85; }
+      45% { opacity: 0.6; }
+      50% { opacity: 0; }
+      55% { opacity: 0.4; }
+      70% { opacity: 0.7; }
       100% { opacity: 1; }
     }
 
     .product__title {
-      animation: productTitleFlicker 1.8s infinite;
+      animation: productTitleFlicker 3s infinite;
     }
   `;
   document.head.appendChild(style);
