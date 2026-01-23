@@ -14,3 +14,44 @@ function addStyle(styleString) {
 //     }, 1500); 
 //   }
 // }
+
+// Run after DOM is ready
+document.addEventListener("DOMContentLoaded", () => {
+  /* 1. Set width for slideshow section */
+  const slideshowSection = document.getElementById(
+    "shopify-section-template--19891741327581__slideshow_zm9pm7"
+  );
+
+  if (slideshowSection) {
+    slideshowSection.style.width = "80vw";
+    slideshowSection.style.margin = "0 auto";
+  }
+
+  /* 2. Set width for product media wrapper */
+  const mediaWrappers = document.querySelectorAll(
+    ".grid__item.product__media-wrapper"
+  );
+
+  mediaWrappers.forEach((el) => {
+    el.style.width = "80vw";
+    el.style.margin = "0 auto";
+  });
+
+  /* 3. Inject flicker animation for product title */
+  const style = document.createElement("style");
+  style.innerHTML = `
+    @keyframes productTitleFlicker {
+      0% { opacity: 1; }
+      45% { opacity: 0.9; }
+      50% { opacity: 0.6; }
+      55% { opacity: 0.95; }
+      70% { opacity: 0.85; }
+      100% { opacity: 1; }
+    }
+
+    .product__title {
+      animation: productTitleFlicker 1.8s infinite;
+    }
+  `;
+  document.head.appendChild(style);
+});
