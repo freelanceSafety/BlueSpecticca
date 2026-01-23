@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (slideshowSection) {
     slideshowSection.style.width = "80vw";
-    slideshowSection.style.margin = "0 auto";
+    slideshowSection.style.overflow = "hidden";
   }
 
   /* 2. Set width for product media wrapper */
